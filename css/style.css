@@ -1,0 +1,23 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("daynight.css");
+
+body {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-family: "Poppins", "Segoe UI", "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(
+    180deg,
+    var(--bodycol1) 20%,
+    var(--bodycol2) 40%,
+    var(--bodycol3) 60%,
+    var(--bodycol4) 80%
+  );
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

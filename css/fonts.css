@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Merriweather:wght@400;700;900&display=swap");
+
+:root {
+  --font-inter: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-montserrat: "Montserrat", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-poppins: "Poppins", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-dm-sans: "DM Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-space-grotesk:
+    "Space Grotesk", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-merriweather: "Merriweather", Georgia, serif;
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-space-grotesk);
+  --font-serif: var(--font-merriweather);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
+}
+
+.font-space-grotesk {
+  font-family: var(--font-space-grotesk);
+}
+
+.font-merriweather {
+  font-family: var(--font-merriweather);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}

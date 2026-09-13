@@ -1,0 +1,104 @@
+/* DEFAULT COLOR, SIZE and TITLE SETTINGS AS PER W3 */
+
+:root {
+  --color1: red;
+  --color2: white;
+  --color3: black;
+  --color4: green;
+  --color5: blue;
+  --color6: rgb(253, 251, 251);
+  --color7: rgb(170, 170, 252);
+  --color8: white;
+  --color9: rgb(14, 13, 13);
+  --color10: #555;
+  --color11: #292727;
+  --color12: #292727;
+  --color13: green;
+  --color14: blue;
+  --color15: white;
+  --color16: rgb(14, 13, 13);
+}
+
+html {
+  --ahacol: var(--color2);
+  --ahahover: #6940e6;
+  --ahgrid: rgb(232, 227, 247);
+  --ahgtext: #06065d;
+  --ahlink: var(--color5);
+
+  /* grid cell border */
+
+  --colrule: rgb(167, 160, 160);
+  --dmode: none;
+  --gridbg: hsl(340 80% 50%);
+  --gridtx: hsl(253, 80%, 70%);
+  --hbbot: #4caf50;
+  --hbhov: #ffc107;
+  --hbmid: #2196f3;
+  --hbtop: #ff5733;
+  --hover-color: #3312f1;
+  --link-color: #0071ff;
+  --navbg: rgba(180, 188, 192, 0.5);
+  --nmode: block;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --secondary-color: #42e4d1;
+  --starscol: gold;
+  --tbg: #f8fafa;
+  --tborder: 1px solid #ddd;
+  --text-color: #06065d;
+  --nav-text: #000;
+  --thoverbg: #91a89a;
+  --trowaltbg: #cfd1de;
+  --trowbg: #eef6f2;
+  --background-color: white;
+  --paneblur: rgba(68, 52, 193, 0);
+  --bodycol1: #afaebd;
+  --bodycol2: #b1d0e4;
+  --bodycol3: #d4f8d6;
+  --bodycol4: #d5c4bd;
+  --ext-link-col: var(--color5);
+  --ext-link-bg: var(--hbhov);
+  --ext-link-hov: rgb(13, 12, 12);
+}
+
+.night-mode {
+  --ahacol: var(--color2);
+  --ahahover: var(--ahgtext);
+  --ahgrid: rgb(46, 50, 46);
+  --ahgtext: var(--color8);
+  --ahlink: #e9e90f;
+  --background-color: #000;
+  --colrule: rgb(71, 65, 65);
+
+  --colrule: rgb(167, 160, 160);
+  --dmode: block;
+  --gridbg: hsl(340 80% 50%);
+  --gridtx: hsl(253, 80%, 70%);
+  --hbbot: #4caf50;
+  --hbhov: #ffc107;
+  --hbmid: #2196f3;
+  --hbtop: #ff5733;
+  --hover-color: #e49f0c;
+  --link-color: #e9e90f;
+  --navbg: rgba(33, 42, 55, 0.6);
+  --nav-text: #fff;
+  --nmode: none;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --secondary-color: #f03838;
+  --starscol: gold;
+  --tbg: #2b2e2e;
+  --tborder: 1px solid #ddd;
+  --thoverbg: #91a89a;
+  --trowaltbg: var(--color5);
+  --trowbg: var(--color11);
+  --text-color: white;
+  --background-color: white;
+  --paneblur: rgba(255, 255, 255, 0.95);
+  --bodycol1: #0a044d;
+  --bodycol2: #05385a;
+  --bodycol3: #033706;
+  --bodycol4: #40302a;
+  --ext-link-col: var(--ahlink);
+  --ext-link-bg: var(--hbhov);
+}
+
