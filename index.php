@@ -13,7 +13,6 @@
         <h1>Welcome to gdtemplate</h1>
         <p>This is a simple template.</p>
     </div>
-
 </body>
 
 </html>
