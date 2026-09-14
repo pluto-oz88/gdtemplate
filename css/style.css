@@ -19,5 +19,23 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+}
+
+/* Show only one theme toggle icon at a time. */
+.mode-toggle {
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0.9em;
+  &:hover {
+    transform: scale(1.1) translateY(2px);
+    transition: transform 0.3s ease;
+  }
+}
+
+.mode-toggle.mode-day {
+  display: var(--nmode);
+}
+
+.mode-toggle.mode-night {
+  display: var(--dmode);
 }

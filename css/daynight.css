@@ -20,6 +20,9 @@
 }
 
 html {
+  --dmode: none;
+  --nmode: inline-block;
+
   --ahacol: var(--color2);
   --ahahover: #6940e6;
   --ahgrid: rgb(232, 227, 247);
@@ -29,7 +32,7 @@ html {
   /* grid cell border */
 
   --colrule: rgb(167, 160, 160);
-  --dmode: none;
+
   --gridbg: hsl(340 80% 50%);
   --gridtx: hsl(253, 80%, 70%);
   --hbbot: #4caf50;
@@ -39,7 +42,6 @@ html {
   --hover-color: #3312f1;
   --link-color: #0071ff;
   --navbg: rgba(180, 188, 192, 0.5);
-  --nmode: block;
   --overlay: rgba(0, 0, 0, 0.5);
   --secondary-color: #42e4d1;
   --starscol: gold;
@@ -62,6 +64,9 @@ html {
 }
 
 .night-mode {
+  --dmode: inline-block;
+  --nmode: none;
+
   --ahacol: var(--color2);
   --ahahover: var(--ahgtext);
   --ahgrid: rgb(46, 50, 46);
@@ -71,7 +76,7 @@ html {
   --colrule: rgb(71, 65, 65);
 
   --colrule: rgb(167, 160, 160);
-  --dmode: block;
+
   --gridbg: hsl(340 80% 50%);
   --gridtx: hsl(253, 80%, 70%);
   --hbbot: #4caf50;
@@ -82,7 +87,7 @@ html {
   --link-color: #e9e90f;
   --navbg: rgba(33, 42, 55, 0.6);
   --nav-text: #fff;
-  --nmode: none;
+
   --overlay: rgba(0, 0, 0, 0.5);
   --secondary-color: #f03838;
   --starscol: gold;
@@ -101,4 +106,3 @@ html {
   --ext-link-col: var(--ahlink);
   --ext-link-bg: var(--hbhov);
 }
-
