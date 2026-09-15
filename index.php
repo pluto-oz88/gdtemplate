@@ -12,7 +12,18 @@
 
 <body>
 
-    <?php include 'includes/daynight.php'; ?>
+  <nav class="navgrid">
+    <div class="navitem"><?php include 'includes/daynight.php'; ?></div>
+    <div class="navitem"><a href="page1.php">Page 1</a></div>
+    <div class="navitem"><a href="page2.php">Page 2</a></div>
+    <div class="navitem"><a href="page3.php">Page 3</a></div>
+    <div class="navitem"><a href="page4.php">Page 4</a></div>
+    <div class="navitem"><a href="page5.php">Page 5</a></div>
+    <div class="navitem"><a href="page6.php">Page 6</a></div>
+    <div class="navitem"><a href="page7.php">Page 7</a></div>
+  </nav>
+
+
 
 
     <div class="wrapper">
@@ -21,6 +32,7 @@
         <h3>We need to add day night button</h3>
         <h4>This is a heading 4</h4>
         <h5>This is a heading 5</h5>
+
         <p>This is a simple template.</p>
     </div>
 </body>

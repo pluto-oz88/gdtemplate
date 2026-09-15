@@ -1,0 +1,15 @@
+nav.navgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+nav.navgrid .navitem {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--colrule);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

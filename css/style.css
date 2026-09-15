@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("reset.css");
 @import url("daynight.css");
+@import url("nav.css");
 
 body {
   font-size: 1.5em;
@@ -21,21 +22,18 @@ body {
   margin: 0 auto;
 }
 
-/* Show only one theme toggle icon at a time. */
-.mode-toggle {
-  align-items: center;
-  cursor: pointer;
-  padding: 0 0.9em;
-  &:hover {
-    transform: scale(1.1) translateY(2px);
-    transition: transform 0.3s ease;
-  }
+.grid-auto-fit {
+  --grid-min-col-size: 200px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 1rem;
 }
 
-.mode-toggle.mode-day {
-  display: var(--nmode);
-}
-
-.mode-toggle.mode-night {
-  display: var(--dmode);
+.grid-item {
+  background-color: var(--gridbg);
+  color: var(--gridtx);
+  padding: 1rem;
+  border: 1px solid var(--colrule);
+  text-align: center;
 }
