@@ -106,3 +106,22 @@ html {
   --ext-link-col: var(--ahlink);
   --ext-link-bg: var(--hbhov);
 }
+
+/* Show only one theme toggle icon at a time. */
+.mode-toggle {
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0.9em;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+}
+
+.mode-toggle.mode-day {
+  display: var(--nmode);
+}
+
+.mode-toggle.mode-night {
+  display: var(--dmode);
+}
