@@ -18,15 +18,22 @@ body {
 }
 
 .wrapper {
+  --wrapperbg: var(--ext-link-hov);
+
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--wrapperbg);
+  color: contrast-color(var(--wrapperbg));
 }
 
 .grid-auto-fit {
   --grid-min-col-size: 200px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--grid-min-col-size), 100%), 1fr)
+  );
   gap: 1rem;
 }
 
