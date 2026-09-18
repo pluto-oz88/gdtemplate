@@ -3,6 +3,10 @@
 @import url("daynight.css");
 @import url("nav.css");
 
+:root {
+  --fontfuck: clamp(1rem, calc(0.5rem + 3cqi), 3.25rem);
+}
+
 body {
   font-size: 1.5em;
   line-height: 1.5;
@@ -24,6 +28,25 @@ body {
   margin: 0 auto;
   background-color: var(--wrapperbg);
   color: contrast-color(var(--wrapperbg));
+  container: wrapper / inline-size;
+  h1 {
+    font-size: var(--fontfuck);
+  }
+  h2 {
+    font-size: calc(var(--fontfuck) * 0.75);
+  }
+  h3 {
+    font-size: calc(var(--fontfuck) * 0.625);
+  }
+  h4 {
+    font-size: calc(var(--fontfuck) * 0.5);
+  }
+  h5 {
+    font-size: calc(var(--fontfuck) * 0.4375);
+  }
+  h6 {
+    font-size: calc(var(--fontfuck) * 0.375);
+  }
 }
 
 .grid-auto-fit {
@@ -41,6 +64,45 @@ body {
   background-color: var(--gridbg);
   color: var(--gridtx);
   padding: 1rem;
+  border: 1px solid var(--colrule);
+  text-align: center;
+}
+
+.topv,
+.restv,
+a {
+  display: inline-block;
+}
+
+.vgrid {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 30px;
+  gap: 0.1rem;
+  cursor: pointer;
+}
+
+.vgrid .restv {
+  display: none;
+}
+
+.vgrid .topv:hover ~ .restv,
+.vgrid:hover .restv,
+.vgrid .topv:focus-visible ~ .restv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.1rem;
+}
+
+.vgrid .restv:hover {
+  background-color: blue;
+}
+
+.vgrid .topv {
+  background-color: var(--gridbg);
+  color: var(--gridtx);
   border: 1px solid var(--colrule);
   text-align: center;
 }
